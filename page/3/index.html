@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -339,7 +339,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -492,7 +492,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -619,7 +619,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -770,7 +770,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -876,7 +876,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
 
           
@@ -1090,7 +1090,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
 
           
@@ -1203,7 +1203,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> plus1 = <span class="function"><span class="params">item</span> =&gt;</span> item + <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
 <p>使用上面的函数创建一个 transformer，在 transformer 的 <code>step</code> 中，会对每个元素进行转换。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> xfplus1 = &#123;</span><br><span class="line">  init: <span class="function"><span class="params">()</span> =&gt;</span> &#123; <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'init not needed'</span>); &#125;,</span><br><span class="line"></span><br><span class="line">  step: <span class="function">(<span class="params">result, item</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> plus1ed = plus1(item);</span><br><span class="line">    <span class="keyword">return</span> append(result, plus1ed);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// step: (result, item) =&gt; append(result, plus1(item)),</span></span><br><span class="line">  </span><br><span class="line">  result: <span class="function"><span class="params">result</span> =&gt;</span> result,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我们可以使用 transformer 逐步输出结果。</p>
+<p>我们来使用 transformer 输出每步的计算结果。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> xf = xfplus1;</span><br><span class="line"><span class="keyword">const</span> init = [];</span><br><span class="line"><span class="keyword">let</span> result = xf.step(init, <span class="number">2</span>);</span><br><span class="line"><span class="comment">// [3] (=append([], 2+1)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// [3,4] (=append([3], 3+1)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">4</span>);</span><br><span class="line"><span class="comment">// [3,4,5] (=append([3,4], 4+1)))</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> output = xf.result(result);</span><br><span class="line"><span class="comment">// [3,4,5]</span></span><br></pre></td></tr></table></figure>
 <p>我们使用一个 transformer 来遍历元素：将每个元素加 1 后，添加到输出数组中。</p>
 <p>如果想计算数组元素加 1  后的总和，该怎么办呢？可以使用 reduce 。</p>
@@ -1229,18 +1229,18 @@
 <p>仅此两处差异，其他完全一样。</p>
 <p>需要注意的是，只有 <code>stepper</code> 转换知道 <code>result</code> 的数据类型。当封装 <code>sum</code> 时，<code>result</code> 的类型为数字，封装 <code>append</code> 时，<code>result</code> 的类型是数组。初始值类型与 stepper 的 <code>result</code> 参数类型相同。每次迭代元素的类型不限，因为 <code>stepper</code> 知道如何组合上次输出的结果和当前的元素，并返回一个新的组合的结果；本次输出结果可能会用于下次迭代中的组合，如此迭代循环。</p>
 <p>这些特性允许我们定义独立于输出的转换。</p>
-<h2 id="可能会变糟">可能会变糟</h2>
+<h2 id="可能会像-1-一样糟糕">可能会像 1 一样糟糕</h2>
 <p>(注：第二句歌词，Can be as bad as one，作者意思应该是，如果 <code>plus2</code> 还跟 <code>plus1</code> 一样从头重新实现一遍，就比较坑了)</p>
-<p>假如我们想要在归并之前 <code>plus2</code>，需要改变哪些地方呢？我们可以定义一个类似于 <code>transducerPlus1</code> 的新的 <code>transducerPlus2</code> 。回头看一下 <code>transducerPlus1</code> 是如何实现的，并决定哪些地方需要更改。但这样做违反了 DRY 原则。</p>
+<p>假如我们想要 <code>plus2</code>，需要做哪些改变呢？我们可以像定义 <code>transducerPlus1</code> 那样，定义一个新的 <code>transducerPlus2</code> 。看看 <code>transducerPlus1</code> 是如何实现的，并决定做哪些改变。但这样做违反了 DRY 原则。</p>
 <p>有更好的方案吗？</p>
-<p>实际上，除了将 step 的值用 <code>plus2</code> 替换掉 <code>plus1</code> 以外，其他都是一样的。</p>
-<p>让我们将 <code>plus1</code> 提取出来，并将其作为函数 <code>f</code> 进行传递。</p>
+<p>实际上，除了将 transformer 中 <code>step</code> 函数的值由 <code>plus1</code> 替换为 <code>plus2</code> 之外，其他的没变。</p>
+<p>因此，可以将 <code>plus1</code> 提取出来，并将其作为 <code>f</code> 传进去。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="function"><span class="params">f</span> =&gt;</span> <span class="function"><span class="params">xf</span> =&gt;</span> (&#123;</span><br><span class="line">  init: <span class="function"><span class="params">()</span> =&gt;</span> xf.init(),</span><br><span class="line">  step: <span class="function">(<span class="params">result, item</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> mapped = f(item);</span><br><span class="line">    <span class="keyword">return</span> xf.step(result, mapped);</span><br><span class="line">  &#125;,</span><br><span class="line">  result: <span class="function"><span class="params">result</span> =&gt;</span> xf.result(result),</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>我们定义了 mapping transducer，让我们使用它来逐步转换。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> plus2 = <span class="function">(<span class="params">input</span>) =&gt;</span> input + <span class="number">2</span>;</span><br><span class="line"><span class="keyword">const</span> transducer = map(plus2);</span><br><span class="line"><span class="keyword">const</span> stepper = wrap(append);</span><br><span class="line"><span class="keyword">const</span> xf = transducer(stepper);</span><br><span class="line"><span class="keyword">const</span> init = [];</span><br><span class="line"><span class="keyword">let</span> result = xf.step(init, <span class="number">2</span>);</span><br><span class="line"><span class="comment">// [4] (=append([], 2+2)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// [4,5] (=append([4], 3+2)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">4</span>);</span><br><span class="line"><span class="comment">// [4,5,6] (=append([4,5], 4+1)))</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> output = xf.result(result);</span><br><span class="line"><span class="comment">// [4,5,6]</span></span><br></pre></td></tr></table></figure>
-<p>本例相较于之前使用<code>plus1</code> 和 <code>append</code> 函数的例子，唯一的区别在于使用 <code>map</code> 创建 transducer。我们可以类似地使用 <code>map(plus1)</code> 来创建 <code>plus1</code> transducer。<code>transducerPlus1</code> 虽然只是短暂的出现便被 <code>map(plus1)</code> 代替，但它对我们理解 transduce 的内部原理帮助很大。</p>
+<p>我们定义了 mapping transducer，我们使用它来单步执行转换过程。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> plus2 = <span class="function"><span class="params">input</span> =&gt;</span> input + <span class="number">2</span>;</span><br><span class="line"><span class="keyword">const</span> transducer = map(plus2);</span><br><span class="line"><span class="keyword">const</span> stepper = wrap(append);</span><br><span class="line"><span class="keyword">const</span> xf = transducer(stepper);</span><br><span class="line"><span class="keyword">const</span> init = [];</span><br><span class="line"><span class="keyword">let</span> result = xf.step(init, <span class="number">2</span>);</span><br><span class="line"><span class="comment">// [4] (=append([], 2+2)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// [4,5] (=append([4], 3+2)))</span></span><br><span class="line"></span><br><span class="line">result = xf.step(result, <span class="number">4</span>);</span><br><span class="line"><span class="comment">// [4,5,6] (=append([4,5], 4+1)))</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> output = xf.result(result);</span><br><span class="line"><span class="comment">// [4,5,6]</span></span><br></pre></td></tr></table></figure>
+<p>本例相较于之前 <code>plus1</code> 和 <code>append</code> 的例子，唯一的区别在于使用 <code>map</code> 创建 transducer。我们可以类似地使用 <code>map(plus1)</code> 来创建 <code>plus1</code> transducer。<code>transducerPlus1</code> 虽然只是短暂的出现便被 <code>map(plus1)</code> 代替，但它对我们理解 transduce 的内部原理帮助很大。</p>
 <h2 id="Transduce">Transduce</h2>
-<p>前面的示例讲解了使用 transducers 手动转换一系列的输入。让我们进一步优化。</p>
+<p>上面的例子讲解了如何使用 transducers 对一系列输入进行转换。我们来分解一下其中的步骤。</p>
 <p>首先通过调用一个包含 stepper 转换的 transducer 来初始化 transformation，并定义 transduce 的初始值。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> transducer = map(plus1);</span><br><span class="line"><span class="keyword">const</span> stepper = wrap(append);</span><br><span class="line"><span class="keyword">const</span> xf = transducer(stepper);</span><br><span class="line"><span class="keyword">const</span> init = [];</span><br></pre></td></tr></table></figure>
 <p>然后使用 <em>reducer</em> <code>xf.step</code> 来遍历每个输入元素。将初始值作为 step 函数的第一个 <code>result</code> 参数（另一个是输入源中的元素），上一个 step 函数的返回值供所有后续元素迭代使用。</p>
@@ -1344,7 +1344,7 @@ lazy lists, indefinite sequence generation, CSP[<a href="http://phuu.net/2014/08
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
 
           
@@ -1419,7 +1419,7 @@ lazy lists, indefinite sequence generation, CSP[<a href="http://phuu.net/2014/08
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-13 14:56:13" itemprop="dateModified" datetime="2020-06-13T14:56:13+00:00">2020-06-13</time>
+                <time title="Modified: 2020-06-14 00:38:29" itemprop="dateModified" datetime="2020-06-14T00:38:29+00:00">2020-06-14</time>
               </span>
 
           
